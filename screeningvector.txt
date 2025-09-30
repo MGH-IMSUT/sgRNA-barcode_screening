@@ -1,0 +1,29 @@
+cd /your directory
+bartender_extractor_com -f KOBCvaridation.fastq -o KOBCsgRNA -q ? -p CACCG[20]GTTTA -m 2
+bartender_extractor_com -f KOBCvaridation.fastq -o KOBCvaridation -q : -p ATTAA[25]GGCCT -m 2
+
+python
+
+def merge_sequences_with_numbers(file1, file2, output_file):
+    sequences = {}
+    with open(file1, 'r') as f1:
+        for line in f1:
+            sequence, number = line.strip().split(",")
+            sequences[number] = sequence
+    with open(file2, 'r') as f2, open(output_file, 'w') as output:
+        for line in f2:
+            sequence, number = line.strip().split(",")
+            if number in sequences:
+                merged_sequence = sequences[number] + sequence
+                output.write(f"{merged_sequence},{number}\n")
+    print(f"Sequences merged successfully. Merged sequences saved in {output_file}.")
+
+
+file1 = "KOBCvaridation_barcode.txt"
+file2 = "KOBCsgRNA_barcode.txt"
+output_file = "merged_sequences.txt"
+merge_sequences_with_numbers(file1, file2, output_file)
+
+
+
+bartender_single_com -f merged_sequence.txt -o KOBCsgRNA -d 3
