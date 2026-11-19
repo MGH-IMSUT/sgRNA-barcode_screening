@@ -104,7 +104,7 @@ merged_sequences.txt	Concatenated 25-nt DNA barcode + 20-nt sgRNA sequences, ass
 Bartender clustering output with prefix KOBCsgRNA	Cluster assignments and sequence-count information, according to the installed Bartender version and its output format.
 
 The analysis of the provided mini dataset (KOBCvaridation.fastq) completes within a few minutes on a standard desktop computer.
-
+The same analysis pipeline can be applied to the original FASTQ files deposited under NCBI BioProject accession PRJNA1228300 to reproduce the sgRNA–barcode count data reported in the associated study.
 
 
 Part V — Citation
