@@ -103,6 +103,8 @@ KOBCvaridation_barcode.txt	Extracted 25-nt random DNA barcodes with read identif
 merged_sequences.txt	Concatenated 25-nt DNA barcode + 20-nt sgRNA sequences, associated with read identifiers.
 Bartender clustering output with prefix KOBCsgRNA	Cluster assignments and sequence-count information, according to the installed Bartender version and its output format.
 
+The analysis of the provided mini dataset (KOBCvaridation.fastq) completes within a few minutes on a standard desktop computer.
+
 
 
 Part V — Citation
