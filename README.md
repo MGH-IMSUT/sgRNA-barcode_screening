@@ -31,7 +31,7 @@ The following environment was checked for documentation purposes:
 - GNU Bash: 3.2.57(1)-release
 These are the available environment details, not confirmation that the complete pipeline was originally run or independently tested with all these versions. Bartender's version and any other operating systems used have not been documented. A separate test environment is not required simply because it exists; list it only if it was actually used for this workflow and is necessary for reproducibility.
 Hardware and runtime
-Hardware specifications, memory requirements, and typical execution times have not been established. Runtime and storage use depend on the FASTQ size and number of unique barcode sequences. The provided mini dataset is intended to make an initial test less resource-intensive than processing the complete dataset.
+Hardware specifications, memory requirements, and typical execution times have not been established. Runtime and storage use depend on the FASTQ size and number of unique barcode sequences. The provided mini dataset is intended to make an initial test less resource-intensive than processing the complete dataset.No additional installation is required for the code provided in this repository, apart from the third-party software listed under System requirements.
 
 
 Part III — sgRNA and DNA barcode processing
